@@ -1,0 +1,46 @@
+.design {
+	padding: 65px 0 130px 0;
+	background: url('/img/design/bg_design.png') center (center / cover) no-repeat;
+	&_wrapper {
+		display: grid;
+		justify-items: center;
+	}
+	&_list {
+		margin-top: 70px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 20px;
+	}
+	&_card {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		padding: 30px 40px 15px 40px;
+		background-color: rgba($designCard, 0.7);
+		border-radius: 30px;
+		&_descr {
+			display: flex;
+			align-items: flex-start;
+			justify-content: flex-start;
+			font-family: 'Roboto';
+			font-size: 18px;
+			line-height: 24px;
+			color: $subtitle;
+		}
+		&_img {
+			display: flex;
+			align-items: flex-end;
+			justify-content: flex-end;
+		}
+	}
+	&_link {
+		margin-top: 35px;
+		font-family: 'Roboto';
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 30px;
+		i {
+			padding-left: 15px;
+			color: $blue;
+		}
+	}
+}

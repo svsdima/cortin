@@ -1,0 +1,9 @@
+.header {
+	padding: 50px 0;
+	&_wrapper {
+		display: grid;
+		grid-template-columns: 1fr 5fr;
+		align-items: center;
+		justify-items: center;
+	}
+}

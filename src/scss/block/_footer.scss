@@ -1,0 +1,49 @@
+.footer {
+	padding-top: 60px;
+	position: relative;
+	background-color: $footerCenter;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: $footerLeft;
+		width: 40%;
+		height: 100%;
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: $footerRight;
+		width: 40%;
+		height: 100%;
+	}
+	&_wrapper {
+		min-height: 300px;
+	}
+	&_up,
+	&_down {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 100px;
+	}
+	li {
+		margin: 15px 0;
+	}
+	&_down {
+		align-items: center;
+	}
+	&_left,
+	&_right,
+	&_center {
+		z-index: 5;
+	}
+	&_center {
+		text-align: center;
+	}
+	i {
+		color: #4c75a5;
+	}
+}
