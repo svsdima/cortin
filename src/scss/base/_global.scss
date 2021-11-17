@@ -3,6 +3,20 @@
 	padding: 0 20px;
 	margin: 0 auto;
 }
+.title {
+	font-size: 46px;
+	line-height: 62px;
+	letter-spacing: 0.1em;
+	color: $title;
+	text-transform: uppercase;
+}
+.subtitle {
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 32px;
+	color: $subtitle;
+}
 .main-page-body {
 	background-color: $mainBGColor;
 	.main {
@@ -15,28 +29,36 @@
 			top: 0;
 			left: -362px;
 			border-radius: 100%;
-			background-color: $ellipse;
+			background-color: $ellipseMain;
 			z-index: -1;
 		}
 	}
-	.title {
-		font-size: 46px;
-		line-height: 62px;
-		letter-spacing: 0.1em;
-		color: $title;
-		text-transform: uppercase;
+}
+.roman-body {
+	* {
+		color: $black;
 	}
-	.subtitle {
-		font-family: 'Roboto';
-		font-weight: 300;
-		font-size: 16px;
-		line-height: 32px;
-		color: $subtitle;
+	.main {
+		position: relative;
+		&::before {
+			content: '';
+			width: 725px;
+			height: 725px;
+			position: absolute;
+			top: 0;
+			right: -362px;
+			border-radius: 100%;
+			background-color: $ellipseRoman;
+			z-index: -1;
+		}
 	}
 }
 * {
 	color: $white;
 	font-family: 'Roboto';
+}
+body {
+	overflow-x: hidden;
 }
 html {
 	scroll-behavior: smooth;
@@ -81,13 +103,17 @@ ul {
 }
 .btn {
 	background-color: $blue;
-	padding: 15px 40px;
+	padding: 15px 20px;
 	font-family: 'Roboto';
 	font-weight: bold;
 	font-size: 20px;
 	line-height: 30px;
 	text-align: center;
 	cursor: pointer;
+	&.white {
+		background-color: $white;
+		color: $btnWhite;
+	}
 }
 .phone {
 	&_input {

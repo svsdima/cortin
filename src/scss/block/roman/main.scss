@@ -1,0 +1,16 @@
+.roman-body {
+	.title {
+		font-weight: 500;
+		font-size: 46px;
+		line-height: 59px;
+		letter-spacing: 0.1em;
+		color: $romanText;
+	}
+	.subtitle {
+		font-family: 'Roboto';
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 30px;
+		color: #000000;
+	}
+}

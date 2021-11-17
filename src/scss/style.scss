@@ -16,21 +16,45 @@
 $maxWidthContainer: 1160px;
 $mainBGColor: #12253b;
 $white: #ffffff;
+$black: #12253b;
 $transition: all 0.3s ease;
 $btnHover: #e7b894;
 $footerLeft: #2a486b;
 $footerCenter: #203b5a;
 $footerRight: #18304d;
-$ellipse: #233e59;
+$ellipseMain: #233e59;
+$ellipseRoman: #ffd24a;
+$ellipseAustrian: #233e59;
 $title: #bba390;
 $subtitle: #8caac8;
 $blue: #2b8cfc;
 $inputColor: #5c82a8;
 $designCard: #051627;
+$storeItem: #122e4a;
+$storeItemText: #6485a7;
+$romanText: #314961;
+$romanSubtitle: #a9b7c6;
+$btnWhite: #767676;
+$liEllipse: #2b8cfc;
+$dayNightCardBackground: #f7f8f9;
+$dayColor: #ffcf23;
+$nightColor: #314961;
 
+// Main Page
 @import './base/global';
-@import './block/header';
-@import './block/footer';
 @import './block/curtain';
 @import './block/conditions';
 @import './block/design';
+@import './block/store';
+
+// Roman Page
+.roman-body {
+	@import './block/roman/main';
+	@import './block/roman/curtain';
+	@import './block/roman/options';
+	@import './block/roman/edging';
+	@import './block/roman/day-night';
+}
+
+@import './block/header';
+@import './block/footer';

@@ -1,0 +1,39 @@
+.edging {
+	padding: 100px 0;
+	.title {
+		font-size: 52px;
+		line-height: 67px;
+		letter-spacing: 0.04em;
+		color: $romanText;
+	}
+	.subtitle {
+		font-size: 20px;
+		line-height: 24px;
+		color: #666666;
+		span {
+			color: $liEllipse;
+		}
+	}
+	&_wrapper {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		align-items: center;
+		gap: 35px;
+		& > :first-child {
+			grid-column-start: 1;
+			grid-column-end: 3;
+		}
+	}
+	&_item {
+		position: relative;
+	}
+	&_name {
+		position: absolute;
+		bottom: 3px;
+		left: 0;
+		padding: 10px 20px;
+		background-color: rgba($romanText, 0.8);
+		color: $white;
+	}
+}

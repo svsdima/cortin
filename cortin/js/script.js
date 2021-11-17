@@ -15,4 +15,18 @@ testWebP(function (support) {
 	}
 });
 
-document.addEventListener('DOMContentLoaded', () => {});
+document.addEventListener('DOMContentLoaded', () => {
+	const makeLogo = () => {
+		const body = document.querySelector('body');
+		const logoWrapper = document.querySelector('.logo a');
+
+		if (body.classList.contains('main-page-body')) {
+			logoWrapper.innerHTML = `<img src="./img/logo_white.svg" alt="logo" />`;
+		}
+		if (body.classList.contains('roman-body')) {
+			logoWrapper.innerHTML = `<img src="./img/logo_black.svg" alt="logo" />`;
+		}
+	};
+
+	makeLogo();
+});
