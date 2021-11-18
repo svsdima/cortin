@@ -1,16 +1,29 @@
-.roman-body {
-	.title {
-		font-weight: 500;
-		font-size: 46px;
-		line-height: 59px;
-		letter-spacing: 0.1em;
-		color: $romanText;
+.title {
+	font-weight: 500;
+	font-size: 46px;
+	line-height: 59px;
+	letter-spacing: 0.1em;
+	color: $romanText;
+}
+.subtitle {
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 30px;
+	color: #000000;
+}
+.footer {
+	background-color: $footerSecondCenter;
+	&::before {
+		background-color: $footerSecondLeft;
 	}
-	.subtitle {
-		font-family: 'Roboto';
-		font-weight: 300;
-		font-size: 20px;
-		line-height: 30px;
-		color: #000000;
+	&::after {
+		background-color: $footerSecondRight;
+	}
+	&_center,
+	&_right {
+		a {
+			color: $footerSecondLeft;
+		}
 	}
 }

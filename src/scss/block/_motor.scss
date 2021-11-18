@@ -1,0 +1,33 @@
+.motor {
+	&_wrapper {
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		align-items: center;
+		justify-items: center;
+		position: relative;
+		padding: 0 60px;
+		&::before {
+			content: '';
+			background-color: $motor;
+			position: absolute;
+			width: 100%;
+			height: 80%;
+			bottom: 4px;
+			left: 0;
+			z-index: -1;
+			border-radius: 20px;
+		}
+	}
+	&_descr {
+		max-width: 500px;
+		.title {
+			margin-top: 50px;
+			color: $motorText;
+		}
+		.subtitle {
+			color: $motorText;
+			margin-top: 10px;
+		}
+	}
+}

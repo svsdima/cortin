@@ -1,0 +1,37 @@
+.window-options {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	background-color: $windowOptionsBG;
+	align-items: center;
+	justify-items: center;
+	&_left,
+	&_right {
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&_center {
+		padding: 150px 70px;
+	}
+	&_title {
+		text-align: center;
+		color: $white;
+		font-weight: 500;
+		font-size: 40px;
+		line-height: 51px;
+		letter-spacing: 0.04em;
+	}
+	&_subtitle {
+		margin-top: 20px;
+		font-family: 'Roboto';
+		font-size: 18px;
+		line-height: 28px;
+		text-align: center;
+		color: $white;
+	}
+}

@@ -34,11 +34,19 @@ $storeItem: #122e4a;
 $storeItemText: #6485a7;
 $romanText: #314961;
 $romanSubtitle: #a9b7c6;
+$romanTypesSubtitle: #6a88a6;
 $btnWhite: #767676;
 $liEllipse: #2b8cfc;
 $dayNightCardBackground: #f7f8f9;
 $dayColor: #ffcf23;
 $nightColor: #314961;
+$windowOptionsBG: #12253b;
+$dash: #476482;
+$footerSecondRight: #f4f7fa;
+$footerSecondCenter: #dfe7ef;
+$footerSecondLeft: #314961;
+$motor: #dac3a2;
+$motorText: #142536;
 
 // Main Page
 @import './base/global';
@@ -46,6 +54,7 @@ $nightColor: #314961;
 @import './block/conditions';
 @import './block/design';
 @import './block/store';
+@import './block/automation';
 
 // Roman Page
 .roman-body {
@@ -54,7 +63,11 @@ $nightColor: #314961;
 	@import './block/roman/options';
 	@import './block/roman/edging';
 	@import './block/roman/day-night';
+	@import './block/roman/types';
+	@import './block/roman/window-options';
 }
 
 @import './block/header';
 @import './block/footer';
+@import './block/flow-production';
+@import './block/motor';

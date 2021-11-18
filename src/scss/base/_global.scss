@@ -16,6 +16,9 @@
 	font-size: 16px;
 	line-height: 32px;
 	color: $subtitle;
+	span {
+		color: $liEllipse;
+	}
 }
 .main-page-body {
 	background-color: $mainBGColor;
@@ -110,10 +113,6 @@ ul {
 	line-height: 30px;
 	text-align: center;
 	cursor: pointer;
-	&.white {
-		background-color: $white;
-		color: $btnWhite;
-	}
 }
 .phone {
 	&_input {
@@ -130,5 +129,34 @@ ul {
 		&::placeholder {
 			color: $inputColor;
 		}
+	}
+	a {
+		font-family: 'Roboto';
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 21px;
+		color: $romanText;
+	}
+}
+.address {
+	margin: 15px 0;
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 20px;
+}
+.email {
+	margin: 15px 0;
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 16px;
+}
+.social {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	column-gap: 25px;
+	i {
+		font-size: 25px;
 	}
 }

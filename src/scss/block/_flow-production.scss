@@ -1,0 +1,156 @@
+.flow-production {
+	padding: 150px 0;
+	.title {
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 46px;
+		letter-spacing: 0.1em;
+	}
+	.subtitle {
+		margin-top: 10px;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 30px;
+		color: $windowOptionsBG;
+		span {
+			font-weight: bold;
+			color: $liEllipse;
+		}
+	}
+	&_descr {
+		display: grid;
+		grid-template-rows: 1fr 1fr auto;
+		grid-area: descr;
+	}
+	&_img {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		margin-top: -5px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&_wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		align-items: center;
+		justify-items: center;
+		column-gap: 70px;
+		row-gap: 180px;
+		grid-template-areas:
+			'descr price'
+			'conditions conditions';
+	}
+
+	&_price {
+		position: relative;
+		grid-area: price;
+		&_text {
+			display: grid;
+			grid-template-columns: 1fr 2fr;
+			align-items: center;
+			justify-items: center;
+			margin-top: -5px;
+			padding: 20px 40px;
+			background-color: $liEllipse;
+			span {
+				font-size: 20px;
+				line-height: 26px;
+				letter-spacing: 0.1em;
+				color: $white;
+				text-transform: uppercase;
+			}
+		}
+	}
+	&_conditions {
+		grid-area: conditions;
+		// display: grid;
+		// align-items: center;
+		// justify-items: center;
+		position: relative;
+		.title {
+			text-align: center;
+			max-width: 450px;
+			position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: -33%;
+				width: 33%;
+				height: 0;
+				border: 1px dashed $dash;
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				right: -33%;
+				width: 33%;
+				height: 0;
+				border: 1px dashed $dash;
+			}
+		}
+		.subtitle {
+			position: relative;
+			font-size: 20px;
+			line-height: 30px;
+			text-align: center;
+			color: $subtitle;
+			&::before {
+				content: url('/img/flow-production/scissors.jpg');
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: -37.5%;
+				width: 40px;
+				height: 40px;
+				z-index: 2;
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				top: 360px;
+				right: -33%;
+				width: 165%;
+				height: 0;
+				border: 1px dashed $dash;
+			}
+		}
+	}
+	&_input {
+		display: block;
+		margin: 50px auto;
+		padding: 15px 30px;
+	}
+	.btn {
+		margin: 0 auto;
+		max-width: 270px;
+		color: $white;
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: -35%;
+			left: -33%;
+			width: 0;
+			height: 120%;
+			border: 1px dashed $dash;
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -35%;
+			right: -33%;
+			width: 0;
+			height: 120%;
+			border: 1px dashed $dash;
+		}
+	}
+}
